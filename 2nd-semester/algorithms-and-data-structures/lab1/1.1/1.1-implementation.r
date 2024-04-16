@@ -20,12 +20,12 @@ if (delta > 0) {
   delta_sq <- sqrt(delta)
   x1 <- (-b - delta_sq) / 2 * a
   x2 <- (-b + delta_sq) / 2 * a
-  cat("x1 = ", x1, ", x2 = ", x2)
+  cat("x1 = ", x1, ", x2 = ", x2, fill = TRUE)
 } else if (delta == 0) {
   # print x0 if delta == 0 
   x0 <- -b / 2 * a
-  cat("x0 = ", x0)
+  cat("x0 = ", x0, fill = TRUE)
 } else {
   # print 'no solutions' if delta < 0 
-  print("No solutions")
+  cat("No solutions", fill = TRUE)
 }
